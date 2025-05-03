@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Museum</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .heading {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold heading text-gray-800">
+                        MUSEUM
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="text-orange-500">About</a>
+                    <a href="exhibitions.html" class="text-gray-800 hover:text-orange-500 transition-colors">Exhibitions</a>
+                    <a href="events.html" class="text-gray-800 hover:text-orange-500 transition-colors">Events</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-orange-500 transition-colors">Contact</a>
+                    <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors">
+                        Buy Tickets
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="index.html" class="text-gray-800 hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="text-orange-500">About</a>
+                    <a href="exhibitions.html" class="text-gray-800 hover:text-orange-500 transition-colors">Exhibitions</a>
+                    <a href="events.html" class="text-gray-800 hover:text-orange-500 transition-colors">Events</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-orange-500 transition-colors">Contact</a>
+                    <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors">
+                        Buy Tickets
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20">
+        <div class="h-[60vh] relative">
+            <img src="https://images.pexels.com/photos/2372978/pexels-photo-2372978.jpeg" 
+                 alt="Museum Interior" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-5xl md:text-6xl font-bold heading text-white text-center">
+                    Our Story
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-4xl font-bold heading mb-6">A Century of Excellence</h2>
+                    <p class="text-gray-600 mb-6">
+                        Founded in 1923, our museum has been at the forefront of preserving and showcasing humanity's greatest achievements and most fascinating stories. What began as a small collection has grown into one of the world's most prestigious cultural institutions.
+                    </p>
+                    <p class="text-gray-600">
+                        Today, we continue to inspire wonder and curiosity in visitors of all ages, bringing history to life through innovative exhibitions and educational programs.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/2372977/pexels-photo-2372977.jpeg" 
+                         alt="Museum History" 
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+
+            <!-- Mission & Vision -->
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold heading mb-12">Mission & Vision</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <i class="fas fa-compass text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            To preserve, protect, and share the world's cultural heritage through engaging exhibitions and educational programs that inspire curiosity and foster understanding.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <i class="fas fa-eye text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                        <p class="text-gray-600">
+                            To be a leading cultural institution that connects people with history, art, and science in ways that inspire creativity, learning, and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <h2 class="text-4xl font-bold heading mb-12 text-center">Our Journey</h2>
+                <div class="border-l-2 border-orange-500 ml-4 md:ml-0 md:mx-auto md:max-w-3xl">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-8 pb-8 md:ml-[50%] md:pl-12">
+                        <div class="absolute left-[-8px] top-0 w-4 h-4 bg-orange-500 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-2">1923</h3>
+                            <p class="text-gray-600">Museum founded with initial collection of historical artifacts.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-8 pb-8 md:mr-[50%] md:pr-12 md:pl-0">
+                        <div class="absolute left-[-8px] top-0 w-4 h-4 bg-orange-500 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-2">1950</h3>
+                            <p class="text-gray-600">Major expansion and renovation of museum facilities.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative pl-8 pb-8 md:ml-[50%] md:pl-12">
+                        <div class="absolute left-[-8px] top-0 w-4 h-4 bg-orange-500 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-2">1985</h3>
+                            <p class="text-gray-600">Introduction of educational programs and interactive exhibits.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="relative pl-8 md:mr-[50%] md:pr-12 md:pl-0">
+                        <div class="absolute left-[-8px] top-0 w-4 h-4 bg-orange-500 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-2">Present</h3>
+                            <p class="text-gray-600">Continuing to innovate and inspire with world-class exhibitions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold heading mb-4">MUSEUM</h3>
+                    <p class="text-gray-400">
+                        Where history meets the future, creating unforgettable experiences for generations to come.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-400 hover:text-white">Exhibitions</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Visit Us</h4>
+                    <address class="text-gray-400 not-italic">
+                        123 Museum Street<br>
+                        City, State 12345<br>
+                        Phone: (123) 456-7890<br>
+                        Email: info@museum.com
+                    </address>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Museum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
